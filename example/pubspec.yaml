@@ -13,8 +13,6 @@ dependencies:
 dependency_overrides:
   connectivity_plus_platform_interface:
     path: ../../connectivity_plus_platform_interface
-  # connectivity_plus_web:
-  #   path: ../../connectivity_plus_web
 
 dev_dependencies:
   flutter_driver:
