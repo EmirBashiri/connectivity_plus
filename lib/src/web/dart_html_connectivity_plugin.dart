@@ -15,6 +15,7 @@ class DartHtmlConnectivityPlugin extends ConnectivityPlusWebPlugin {
         : [ConnectivityResult.none];
   }
 
+  // ignore: close_sinks
   StreamController<List<ConnectivityResult>>? _connectivityResult;
 
   /// Returns a Stream of ConnectivityResults changes.

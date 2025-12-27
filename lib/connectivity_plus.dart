@@ -11,7 +11,11 @@ import 'package:collection/collection.dart';
 export 'package:connectivity_plus_platform_interface/connectivity_plus_platform_interface.dart'
     show ConnectivityResult;
 
-export 'src/connectivity_plus_web.dart';
+// Export the web implementation only when compiling for web. Use a non-web stub
+// for other platforms so files that import `dart:html` are not compiled on
+// Android/iOS builds.
+export 'src/connectivity_plus_stub.dart'
+    if (dart.library.html) 'src/connectivity_plus_web.dart';
 
 /// Discover network connectivity configurations: Distinguish between WI-FI and cellular, check WI-FI status and more.
 class Connectivity {
