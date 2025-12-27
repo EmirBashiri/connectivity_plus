@@ -10,10 +10,6 @@ dependencies:
   connectivity_plus:
     path: ../
 
-dependency_overrides:
-  connectivity_plus_platform_interface:
-    path: ../../connectivity_plus_platform_interface
-
 dev_dependencies:
   flutter_driver:
     sdk: flutter

@@ -21,18 +21,20 @@ flutter:
         pluginClass: ConnectivityPlusPlugin
 
       web:
-        pluginClass: ConnectivityPlusWebPlugin
-        fileName: src/connectivity_plus_web.dart
+        default_package: connectivity_plus_web
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_web_plugins:
-    sdk: flutter  
   connectivity_plus_platform_interface:
      git:
        url: https://github.com/emirbashiri/connectivity_plus_platform_interface
        ref: main
+  connectivity_plus_web:
+     git:
+       url: https://github.com/emirbashiri/connectivity_plus_web
+       ref: main
+
   collection: ^1.16.0
   # connectivity_plus_web: ^1.2.5
 
